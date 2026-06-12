@@ -1,8 +1,19 @@
-// See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Untitled Node.js project",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-  "remoteUser": "node"
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "wayou.vscode-todo-highlight"
+      ],
+      "settings": {
+        "editor.fontSize": 32,
+        "terminal.integrated.fontSize": 24,
+        "editor.wordWrap": "on"
+      }
+    }
+  }
 }
